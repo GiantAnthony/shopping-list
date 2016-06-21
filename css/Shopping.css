@@ -1,0 +1,148 @@
+body {
+	position: relative;
+	margin: 0 auto;
+}
+/*keeps the left part of the page from crossing 
+over to the right side of the page */
+section {
+	position: absolute;
+	height: 100%;
+}
+/*THE START OF THE LEFT SIDE OF THE PAGE*/
+/*height of the line-breakersd */
+header {
+	height: 9.5em;
+	margin-left: 1.2em;
+
+}
+
+h1 {
+	text-align: center;
+	margin-right: 1.5em;
+}
+/* the size, color of the left side of the shopping list*/
+.Left {
+	height: 50.2em;
+	width: 14em;
+	background-color: #282828;
+	font-weight: 400;
+	color: #fff;
+}
+/*this is the Number counter on the left side 
+show font size and color and is center */
+.count {
+	text-align: center;
+	font-size: 1.2em;
+	color: #00c7b0;
+}
+/* use # for id, this is the font size and color of 
+the do,done,total*/
+#do, #done, #total {
+	color: #693F84;
+	font-size: 4em;
+	display: block;
+}
+
+footer {
+	text-align: center;
+}
+/* THIS IS THE END OF THE LEFT SIDE OF THE PAGE */
+
+/* THIS IS THE START OF THE RIGHT SIDE OF THE PAGE */
+.Right {
+	width: .750em;
+	font-weight: 300;
+
+}
+
+/* This is the type here... size and color of text
+ when you write inside the box also no boarder style */
+.textBox {
+  margin-left: 7.0em;
+  padding: 0.8em; 
+  height: 1.5em;
+  border-style: none; 
+  font-size: 2em;
+  color: #282828;
+  margin-bottom: -.3em;
+}
+/*Text of font*/
+input {
+	font-family: 'Open Sans', sans-serif;	
+	font-weight: 400;
+}
+/* when click on box no boarder will be highlighted is will sitll
+stay blank */
+input:focus {
+	outline: none;
+}
+
+
+#list {
+	position: relative;
+	list-style-type: none;
+	width: 70em;
+	margin-left: 11.5em;
+}
+
+#list li {
+	position: relative;
+	background-color: #693F84;
+	width: 100%;
+	height: 5em;
+}
+
+#list li:nth-child(even) { 
+	background-color: #00c7b0; 
+}
+
+/*This is the color and placement of the item on the list */
+.item {
+	position: absolute;
+	height: 60px;
+	font-size: 1.2em;
+	color: #fff;
+	padding-left: 0.8em;
+	line-height: 3em;
+	margin-top: .6em;
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 900px) and (max-width: 1200px){
+
+	.count {
+		font-size: 1.2em;
+	}
+
+	#do, #done, #total {
+		font-size: 3.5em;
+	}
+	.left {
+		font-size: 3.5em
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px){
+
+	.count {
+		font-size: 1.2em;
+	}
+
+	#do, #done, #total {
+		font-size: 3.5em;
+	}
+	.left {
+		font-size: 3.5em
+	}
+}
+
+
+
+
+
