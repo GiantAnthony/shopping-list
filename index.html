@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shopping List</title>
+	<link rel="stylesheet" type="text/css" href="css/shopping.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/shopping.js" ></script>
+</head>
+<body>
+	<!--This will be the shopping list on the right of the website-->
+	<section class="Left">
+		<header>
+			<h1>Shopping List</h1>
+		</header>
+	<div class="shopping-left">
+		<hr>
+			<p class="count"><span id="total">0</span>Total</p>
+		<hr>
+			<p class="count"><span id="done">0</span>Done</p>
+		<hr>
+			<p class="count"><span id="do">0</span>Do</p>
+		<hr>
+	</div>
+	<footer>
+		<p>Created by:<br>Anthony Espino</p>
+	</footer>
+	</section>
+
+	<!--This is the js on the right side of the website-->
+	<section class="Right">
+	<form>
+		<input type="text" name="newItem" id="newItem" class="textBox" autocomplete="off" placeholder="Type here.." required/>
+	</form>
+			<ul id="list">
+				<li class="listitem">
+					<span class="item">Bread</span>
+					<div class="delete"></div>
+				</li>
+				<li class="listitem checked">
+					<span class="item">Banana</span>
+					<div class="delete"></div>
+				</li>
+				<li class="listitem">
+					<span class="item">Chips</span>
+					<div class="delete"></div>
+				</li>
+				<li class="listitem">
+					<span class="item">Drinks</span>
+					<div class="delete"></div>
+				</li>
+			</ul>
+	</section>
+</body>
+</html>
+
+
+
+
